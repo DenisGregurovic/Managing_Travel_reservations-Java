@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.visual.KorisnikSmjestajController">
+    <fx:include source="KorisniciIzbornik.fxml" />
+   <GridPane layoutX="271.0" layoutY="10.0" prefHeight="689.0" prefWidth="941.0">
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="391.199951171875" minWidth="10.0" prefWidth="295.2000732421875" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="377.0" minWidth="10.0" prefWidth="326.3999267578125" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.20000000000005" minWidth="10.0" prefWidth="309.20000000000005" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints maxHeight="175.0" minHeight="175.0" prefHeight="175.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="175.0" minHeight="175.0" prefHeight="175.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="175.0" minHeight="175.0" prefHeight="175.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="175.0" minHeight="10.0" prefHeight="175.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <children>
+         <Label text="Smještaji" textFill="#281564" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+            <font>
+               <Font size="29.0" />
+            </font>
+         </Label>
+         <TableView fx:id="smjestajTableView" onMouseClicked="#mouseClicked" prefHeight="335.0" prefWidth="939.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+            <columns>
+               <TableColumn fx:id="smjestajIDTableColumn" prefWidth="75.0" text="ID" />
+               <TableColumn fx:id="smjestajNazivTableColumn" prefWidth="170.39993286132812" text="Naziv" />
+               <TableColumn fx:id="smjestajAdresaTableColumn" prefWidth="224.79998779296875" text="Adresa" />
+               <TableColumn fx:id="smjestajVrstaTableColumn" prefWidth="144.0" text="Vrsta" />
+               <TableColumn fx:id="smjestajRedovnaCijenaTableColumn" prefWidth="134.4000244140625" text="Redovna cijena" />
+               <TableColumn fx:id="smjestajAkcijskaCijenaTableColumn" prefWidth="180.0" text="Akcijska cijena" />
+            </columns>
+         </TableView>
+         <TextField fx:id="pretrazivanjeTextField" promptText="Pretrazi" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.hgrow="NEVER" GridPane.valignment="BOTTOM">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </TextField>
+         <VBox prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <Label fx:id="nazivLabel" minHeight="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="294.0" text="Naziv">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </VBox.margin>
+               </Label>
+               <Label fx:id="adresaLabel" minHeight="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="294.0" text="Adresa">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </VBox.margin>
+               </Label>
+               <Label fx:id="vrstaLabel" minHeight="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="294.0" text="Vrsta">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </VBox.margin>
+               </Label>
+               <Label fx:id="redovnaCijenaLabel" minHeight="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="294.0" text="Redovna cijena">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </VBox.margin>
+               </Label>
+               <Label fx:id="akcijskaCijenaLabel" minHeight="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="294.0" text="Akcijska cijena">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </VBox.margin>
+               </Label>
+            </children>
+         </VBox>
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+            <opaqueInsets>
+               <Insets left="20.0" right="20.0" top="20.0" />
+            </opaqueInsets>
+            <children>
+               <Button fx:id="resetButton" alignment="CENTER" mnemonicParsing="false" onAction="#ocisti" prefHeight="26.0" prefWidth="73.0" text="Resetiraj">
+                  <HBox.margin>
+                     <Insets left="5.0" right="5.0" />
+                  </HBox.margin>
+               </Button>
+               <Button fx:id="kontaktButton" alignment="CENTER" mnemonicParsing="false" onAction="#kontaktiraj" prefHeight="26.0" prefWidth="74.0" text="Kontaktiraj">
+                  <HBox.margin>
+                     <Insets left="5.0" right="5.0" />
+                  </HBox.margin>
+               </Button>
+            </children>
+         </HBox>
+      </children>
+   </GridPane>
+</AnchorPane>

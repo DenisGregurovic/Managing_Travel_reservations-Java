@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.visual.ZaposleniciPromjeneController">
+    <fx:include source="ZaposleniciIzbornik.fxml" />
+   <TabPane layoutX="270.0" prefHeight="700.0" prefWidth="926.0" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+       <Tab text="Događaji">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <GridPane layoutX="-1.0" layoutY="-2.0" prefHeight="674.0" prefWidth="933.0">
+                       <columnConstraints>
+                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.199951171875" minWidth="10.0" prefWidth="463.0" />
+                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.199951171875" minWidth="10.0" prefWidth="463.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="495.400048828125" minWidth="10.0" prefWidth="470.6" />
+                       </columnConstraints>
+                       <rowConstraints>
+                         <RowConstraints maxHeight="61.600016021728514" minHeight="10.0" prefHeight="61.600016021728514" vgrow="SOMETIMES" />
+                         <RowConstraints maxHeight="398.7999900817871" minHeight="10.0" prefHeight="306.7999900817871" vgrow="SOMETIMES" />
+                         <RowConstraints maxHeight="304.4" minHeight="10.0" prefHeight="304.4" vgrow="SOMETIMES" />
+                       </rowConstraints>
+                        <children>
+                           <TableView fx:id="dogadajTableView" onMouseClicked="#odaberiDogadaj" prefHeight="658.0" prefWidth="925.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+                              <columns>
+                                 <TableColumn fx:id="dogadajNazivTableColumn" prefWidth="223.20001220703125" text="Naziv" />
+                                 <TableColumn fx:id="dogadajOpisTableColumn" prefWidth="278.40008544921875" text="Opis" />
+                                 <TableColumn fx:id="dogadajDatumTableColumn" prefWidth="134.4000244140625" text="Datum" />
+                                 <TableColumn fx:id="dogadajCijenaTableColumn" prefWidth="132.7999267578125" text="Cijena" />
+                                 <TableColumn fx:id="dogadajKolicinaTableColumn" prefWidth="158.4000244140625" text="Količina" />
+                              </columns>
+                           </TableView>
+                           <Label text="Promjene Događaj" textFill="#281564" GridPane.columnIndex="1">
+                              <font>
+                                 <Font name="Arial Bold" size="31.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </GridPane>
+                  </children></AnchorPane>
+         </content>
+       </Tab>
+       <Tab text="Smještaji">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <GridPane prefHeight="672.0" prefWidth="926.0">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.199951171875" minWidth="10.0" prefWidth="463.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.199951171875" minWidth="10.0" prefWidth="463.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="495.400048828125" minWidth="10.0" prefWidth="470.6" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints maxHeight="61.600016021728514" minHeight="10.0" prefHeight="61.600016021728514" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="398.7999900817871" minHeight="10.0" prefHeight="306.7999900817871" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="304.4" minHeight="10.0" prefHeight="304.4" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <children>
+                           <TableView fx:id="smjestajTableView" onMouseClicked="#odaberiSmjestaja" prefHeight="350.0" prefWidth="912.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+                              <columns>
+                                 <TableColumn fx:id="smjestajNazivTableColumn" prefWidth="220.0" text="Naziv" />
+                                 <TableColumn fx:id="smjestajAdresaTableColumn" prefWidth="261.60003662109375" text="Adresa" />
+                                 <TableColumn fx:id="smjestajVrstaTableColumn" prefWidth="178.400146484375" text="Vrsta" />
+                                 <TableColumn fx:id="smjestajRedovnaCijenaTableColumn" prefWidth="144.800048828125" text="Redovna cijena" />
+                                 <TableColumn fx:id="smjestajAkcijskaCijenaTableColumn" prefWidth="122.4000244140625" text="Akcijska cijena" />
+                              </columns>
+                           </TableView>
+                           <Label text="Promjene Smještaji" textFill="#281564" GridPane.columnIndex="1">
+                              <font>
+                                 <Font name="Arial Bold" size="31.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </GridPane>
+                  </children></AnchorPane>
+         </content>
+       </Tab>
+         <Tab text="Korisnici">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <GridPane prefHeight="672.0" prefWidth="926.0">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.199951171875" minWidth="10.0" prefWidth="463.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.199951171875" minWidth="10.0" prefWidth="463.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="495.400048828125" minWidth="10.0" prefWidth="470.6" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints maxHeight="61.600016021728514" minHeight="10.0" prefHeight="61.600016021728514" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="398.7999900817871" minHeight="10.0" prefHeight="306.7999900817871" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="304.4" minHeight="10.0" prefHeight="304.4" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <children>
+                           <Label text="Promjene Korisnici" textFill="#281564" GridPane.columnIndex="1">
+                              <font>
+                                 <Font name="Arial Bold" size="31.0" />
+                              </font>
+                           </Label>
+                           <TableView fx:id="korisnikTableView" onMouseClicked="#odaberiKorisnika" prefHeight="350.0" prefWidth="912.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+                              <columns>
+                                 <TableColumn fx:id="korisnikImeTableColumn" prefWidth="172.79998779296875" text="Ime" />
+                                 <TableColumn fx:id="korisnikPrezimeTableColumn" prefWidth="216.0" text="Prezime" />
+                                 <TableColumn fx:id="korisnikAdresaTableColumn" prefWidth="230.39996337890625" text="Adresa" />
+                                 <TableColumn fx:id="korisnikDatumRodenjaImeTableColumn" prefWidth="124.0" text="Datum rođenja" />
+                                 <TableColumn fx:id="korisnikKorisnickoImeTableColumn" prefWidth="184.800048828125" text="Korisničko ime" />
+                              </columns>
+                           </TableView>
+                        </children>
+                     </GridPane>
+                  </children></AnchorPane>
+            </content>
+         </Tab>
+         <Tab text="Zaposlenici">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <GridPane prefHeight="672.0" prefWidth="926.0">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.199951171875" minWidth="10.0" prefWidth="463.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.199951171875" minWidth="10.0" prefWidth="463.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="495.400048828125" minWidth="10.0" prefWidth="470.6" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints maxHeight="61.600016021728514" minHeight="10.0" prefHeight="61.600016021728514" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="398.7999900817871" minHeight="10.0" prefHeight="306.7999900817871" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="304.4" minHeight="10.0" prefHeight="304.4" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <children>
+                           <Label prefHeight="36.0" prefWidth="390.0" text="Promjene Zaposlenici" textFill="#281564" GridPane.columnIndex="1" GridPane.columnSpan="2147483647">
+                              <font>
+                                 <Font name="Arial Bold" size="31.0" />
+                              </font>
+                           </Label>
+                           <TableView fx:id="zaposlenikTableView" onMouseClicked="#odaberiZaposlenika" prefHeight="350.0" prefWidth="909.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+                              <columns>
+                                 <TableColumn fx:id="zaposlenikImeTableColumn" prefWidth="164.800048828125" text="Ime" />
+                                 <TableColumn fx:id="zaposlenikPrezimeTableColumn" prefWidth="248.79998779296875" text="Prezime" />
+                                 <TableColumn fx:id="zaposlenikKorisnickoImeTableColumn" prefWidth="253.60003662109375" text="Korisničko ime" />
+                                 <TableColumn fx:id="zaposlenikDatumRodenjaImeTableColumn" prefWidth="129.5999755859375" text="Datum rođenja" />
+                                 <TableColumn fx:id="zaposlenikUlogaTableColumn" prefWidth="130.4000244140625" text="Uloga" />
+                              </columns>
+                           </TableView>
+                        </children>
+                     </GridPane>
+                  </children></AnchorPane>
+            </content>
+         </Tab>
+         <Tab text="Kupljene karte">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <GridPane prefHeight="672.0" prefWidth="926.0">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.199951171875" minWidth="10.0" prefWidth="463.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.199951171875" minWidth="10.0" prefWidth="463.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="495.400048828125" minWidth="10.0" prefWidth="470.6" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints maxHeight="61.600016021728514" minHeight="10.0" prefHeight="61.600016021728514" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="398.7999900817871" minHeight="10.0" prefHeight="306.7999900817871" vgrow="SOMETIMES" />
+                           <RowConstraints maxHeight="304.4" minHeight="10.0" prefHeight="304.4" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <children>
+                           <Label prefHeight="36.0" prefWidth="390.0" text="Kupljene karte" textFill="#281564" GridPane.columnIndex="1" GridPane.columnSpan="2147483647">
+                              <font>
+                                 <Font name="Arial Bold" size="31.0" />
+                              </font>
+                           </Label>
+                           <TableView fx:id="dogadajprodanoTableView" onMouseClicked="#odaberiKupljenuKartu" prefHeight="658.0" prefWidth="925.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+                              <columns>
+                                 <TableColumn fx:id="dogadajprodanoNazivTableColumn" prefWidth="204.7999267578125" text="Naziv" />
+                                 <TableColumn fx:id="dogadajprodanoOpisTableColumn" prefWidth="337.5999755859375" text="Opis" />
+                                 <TableColumn fx:id="dogadajprodanoDatumTableColumn" prefWidth="165.60009765625" text="Datum" />
+                                 <TableColumn fx:id="dogadajprodanoCijenaTableColumn" prefWidth="120.7999267578125" text="Cijena" />
+                                 <TableColumn fx:id="dogadajprodanoKolicinaTableColumn" prefWidth="99.2000732421875" text="Količina" />
+                              </columns>
+                           </TableView>
+                        </children>
+                     </GridPane>
+                  </children>
+               </AnchorPane>
+            </content>
+         </Tab>
+     </tabs>
+   </TabPane>
+
+</AnchorPane>

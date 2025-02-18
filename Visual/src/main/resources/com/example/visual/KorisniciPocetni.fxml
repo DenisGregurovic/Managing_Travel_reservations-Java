@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.visual.LoginController">
+    <fx:include source="KorisniciIzbornik.fxml" />
+   <Label fx:id="zarada" layoutX="309.0" layoutY="254.0" prefHeight="328.0" prefWidth="230.0" text="Dobro došli u našu agenciju za putovanja. Nudimo ulaznice za brojne događaje i adekvatne smještaje za svačiji novčanik." textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="261.0" fitWidth="339.0" layoutX="264.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@TravelLogo.jpg" />
+      </image>
+   </ImageView>
+   <Label layoutX="323.0" layoutY="280.0" text="Putovanja HR" textFill="#281564">
+      <font>
+         <Font name="Arial Bold" size="31.0" />
+      </font>
+   </Label>
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="350.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

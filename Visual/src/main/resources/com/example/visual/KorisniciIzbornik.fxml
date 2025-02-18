@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="270.0" style="-fx-background-color: #9e9d9e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.visual.KorisnikIzbornikController">
+   <children>
+      <Button layoutX="14.0" layoutY="651.0" mnemonicParsing="false" onAction="#Logout" prefHeight="34.0" prefWidth="84.0" style="-fx-background-color: red;" text="Odjava" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="40.0" layoutY="333.0" mnemonicParsing="false" onAction="#KorisniciDogadaji" prefHeight="34.0" prefWidth="192.0" style="-fx-background-color: #281564;" text="Događaji" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="40.0" layoutY="205.0" mnemonicParsing="false" onAction="#KorisniciPocetni" prefHeight="34.0" prefWidth="192.0" style="-fx-background-color: #281564;" text="Početna" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="40.0" layoutY="461.0" mnemonicParsing="false" onAction="#KorisniciSmjestaji" prefHeight="34.0" prefWidth="192.0" style="-fx-background-color: #281564;" text="Smještaji" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="korisnickoImeLabel" layoutX="15.0" layoutY="74.0" prefHeight="78.0" prefWidth="240.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
