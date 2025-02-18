@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="25.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.javafx.priprema.pripremajavafx.MenuController">
+    <MenuBar prefWidth="700.0">
+        <menus>
+            <Menu mnemonicParsing="false" onAction="#showCategoryScreen" text="Category">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showCategoryScreen" text="Search" />
+                    <MenuItem mnemonicParsing="false" onAction="#showNewCategoryScreen" text="Add new category" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#showItemScreen" text="Item">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showItemScreen" text="Search" />
+                    <MenuItem mnemonicParsing="false" onAction="#showNewItemScreen" text="Add new item" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#showFactoryScreen" text="Factory">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showFactoryScreen" text="Search" />
+                    <MenuItem mnemonicParsing="false" onAction="#showNewFactoryScreen" text="Add new factory" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#showStoreScreen" text="Store">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showStoreScreen" text="Search" />
+                    <MenuItem mnemonicParsing="false" onAction="#showNewStoreScreen" text="Add new store" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#showStoreScreen" text="Adress">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showAddressScreen" text="Search" />
+                    <MenuItem mnemonicParsing="false" onAction="#showNewAddressScreen" text="Add new Address" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+</AnchorPane>

@@ -1,0 +1,89 @@
+CREATE TABLE ZAPOSLENIK( 
+ID LONG NOT NULL GENERATED ALWAYS AS IDENTITY,
+IME VARCHAR(250) NOT NULL, 
+PREZIME VARCHAR(250) NOT NULL, 
+KORISNICKO_IME VARCHAR(250) NOT NULL unique, 
+DATUM_RODENJA DATE NOT NULL, 
+ULOGA VARCHAR(250) NOT NULL, 
+PRIMARY KEY(ID) 
+);
+
+CREATE TABLE KORISNIK( 
+ID LONG NOT NULL GENERATED ALWAYS AS IDENTITY,
+IME VARCHAR(250) NOT NULL, 
+PREZIME VARCHAR(250) NOT NULL, 
+KORISNICKO_IME VARCHAR(250) NOT NULL unique, 
+DATUM_RODENJA DATE NOT NULL, 
+ADRESA VARCHAR(250) NOT NULL, 
+PRIMARY KEY(ID) 
+);
+
+CREATE TABLE DOGADAJ( 
+ID LONG NOT NULL GENERATED ALWAYS AS IDENTITY,
+NAZIV VARCHAR(250) NOT NULL, 
+DATUM DATE NOT NULL, 
+OPIS VARCHAR(250) NOT NULL, 
+CIJENA DECIMAL(20,2) NOT NULL, 
+KOLICINA INTEGER NOT NULL, 
+PRIMARY KEY(ID) 
+);
+
+CREATE TABLE SMJESTAJ( 
+ID LONG NOT NULL GENERATED ALWAYS AS IDENTITY,
+NAZIV VARCHAR(250) NOT NULL, 
+ADRESA VARCHAR(250) NOT NULL,
+VRSTA VARCHAR(250) NOT NULL,
+REDOVNA_CIJENA DECIMAL(20,2) NOT NULL,
+POPUST DECIMAL(20,2) NOT NULL, 
+SNIZENA_CIJENA DECIMAL(20,2) NOT NULL,  
+PRIMARY KEY(ID) 
+);
+
+INSERT INTO DOGADAJ (NAZIV, DATUM, OPIS, CIJENA, KOLICINA) VALUES
+('Koncert rock benda', '2024-03-15', 'Nastup poznatog benda', 50.00, 500),
+('Predavanje o tehnologiji', '2024-02-08', 'Stručno predavanje o najnovijim tehnologijama', 20.00, 200),
+('Modna revija', '2024-05-20', 'Prikaz najnovije modne kolekcije', 30.00, 300),
+('Festival hrane', '2024-04-10', 'Degustacija jela iz različitih kuhinja', 25.00, 400),
+('Sportski događaj', '2024-06-05', 'Takmičenje u različitim sportovima', 15.00, 250),
+('Umjetnička izložba', '2024-10-22', 'Izložba slika i skulptura lokalnih umetnika', 10.00, 100),
+('Konferencija o poslovanju', '2024-07-12', 'Diskusija o aktuelnim poslovnim temama', 40.00, 350),
+('Plesni performans', '2024-09-18', 'Izvođenje plesnih numera i performansa', 18.00, 180),
+('Stand-up comedy show', '2024-08-03', 'Veče smeha uz stand-up komičare', 12.00, 150),
+('Sajam knjiga', '2024-11-25', 'Promocija i prodaja knjiga različitih žanrova', 8.00, 80);
+
+INSERT INTO SMJESTAJ (NAZIV, ADRESA, VRSTA, REDOVNA_CIJENA, POPUST, SNIZENA_CIJENA) VALUES
+('Hotel Lux', 'Ulica 123, Grad', 'Hotel', 120.00, 15.00, 102.00),
+('Planinska vila', 'Neki put 45, Naselje', 'Apartman', 80.00, 10.00, 72.00),
+('Seoski apartmani', 'Prostor 18, Naselje', 'Apartman', 50.00, 5.00, 47.50),
+('Gradski hostel', 'Trg 7, Mesto', 'Hostel', 30.00, 8.00, 27.60),
+('Luksuzni resort', 'Bulevar 10, Mesto', 'Hotel', 200.00, 20.00, 160.00),
+('Jezerica Lodge', 'Nekuda 3, Selo', 'Soba', 90.00, 12.00, 79.20),
+('Planinski bungalovi', 'Bulevar 15, Selo', 'Soba', 60.00, 7.00, 55.80),
+('Pansion Panorama', 'Ulica 77, Varoš', 'Hostel', 40.00, 6.00, 37.60),
+('Apartmani Sunce', 'Prolaz 20, Varoš', 'Apartman', 70.00, 9.00, 63.70),
+('Plažni hotel', 'Ulica 55, Grad', 'Soba', 150.00, 18.00, 123.00);
+
+INSERT INTO KORISNIK (IME, PREZIME, KORISNICKO_IME, DATUM_RODENJA, ADRESA) VALUES
+('Ahmed', 'Ahmedić', 'korisnik1', '1990-05-15', 'Ulica 123, Grad'),
+('Lejla', 'Lejlić', 'lejla456', '1985-08-20', 'Neki put 45, Naselje'),
+('Adnan', 'Adnanić', 'adnan789', '1993-02-10', 'Trg 7, Mesto'),
+('Amra', 'Amrić', 'amra101', '1988-11-25', 'Bulevar 15, Selo'),
+('Elvir', 'Elvirić', 'elvir2020', '1995-04-03', 'Prostor 18, Naselje'),
+('Sara', 'Sarić', 'sara87', '1992-09-18', 'Ulica 55, Grad'),
+('Tarik', 'Tarikić', 'tarik22', '1987-06-12', 'Nekuda 3, Selo'),
+('Emina', 'Eminić', 'emina33', '1998-03-30', 'Bulevar 10, Mesto'),
+('Mirza', 'Mirzić', 'mirza55', '1984-07-08', 'Prolaz 20, Varoš'),
+('Aida', 'Aidić', 'aida99', '1991-12-05', 'Ulica 77, Varoš');
+
+INSERT INTO ZAPOSLENIK (IME, PREZIME, KORISNICKO_IME, DATUM_RODENJA, ULOGA) VALUES
+('Marko', 'Marković', 'radnik1', '1990-05-15', 'Administracija'),
+('Ana', 'Anić', 'ana_anic', '1985-08-20', 'Ljudski resursi'),
+('Stefan', 'Stefanović', 'stefan_stefanovic', '1993-02-10', 'Nabava'),
+('Jovana', 'Jovanović', 'jovana_jovanovic', '1988-11-25', 'Prodaja'),
+('Nikola', 'Nikolić', 'nikola_nikolic', '1995-04-03', 'Voditelj'),
+('Milica', 'Milić', 'milica_milic', '1992-09-18', 'Voditelj'),
+('Luka', 'Lukić', 'luka_lukic', '1987-06-12', 'Nabava'),
+('Tamara', 'Tamić', 'tamara_tamic', '1998-03-30', 'Prodaja'),
+('Aleksandar', 'Aleksić', 'aleksandar_aleksic', '1984-07-08', 'Administracija'),
+('Ivana', 'Ivanović', 'ivana_ivanovic', '1991-12-05', 'Voditelj');
+

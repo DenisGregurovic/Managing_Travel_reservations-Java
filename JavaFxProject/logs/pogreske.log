@@ -1,0 +1,53 @@
+2024-01-09 10:51:36,614 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [LoginController.java:53] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 10:51:55,144 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [LoginController.java:53] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 10:51:56,727 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [LoginController.java:53] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 10:51:58,719 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [LoginController.java:64] Korisnik nije unio ispravne informacije za prijavu.
+2024-01-09 10:52:08,857 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [LoginController.java:78] Uspješna prijava.
+2024-01-09 10:58:11,243 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [LoginController.java:62] Korisnik nije unio ispravne informacije za prijavu.
+2024-01-09 10:58:18,226 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [LoginController.java:51] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 10:58:21,529 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [LoginController.java:51] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 10:58:25,754 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [LoginController.java:51] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 10:58:34,207 INFO [JavaFX Application Thread] c.e.j.p.m.Main [LoginController.java:76] Uspješna prijava.
+2024-01-09 10:59:17,340 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:60] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:00:02,502 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:61] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:00:04,059 INFO [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:115] Dodan je novi nalog.
+2024-01-09 11:01:25,023 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:57] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:01:30,476 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:57] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:01:35,148 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:57] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:01:37,020 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:57] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:02:06,317 INFO [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:100] Dodan je novi nalog.
+2024-01-09 11:04:33,599 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:57] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:04:34,884 INFO [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:103] Dodan je novi nalog.
+2024-01-09 11:08:53,847 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:58] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:09:02,685 INFO [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:121] Dodan je novi nalog.
+2024-01-09 11:11:04,106 INFO [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:122] Dodan je novi nalog.
+2024-01-09 11:13:50,871 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:57] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:13:54,349 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:57] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:13:56,558 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:57] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:13:59,109 INFO [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:121] Dodan je novi nalog.
+2024-01-09 11:18:24,427 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:57] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:18:37,409 INFO [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:126] Dodan je novi nalog.
+2024-01-09 11:18:47,785 INFO [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:126] Dodan je novi nalog.
+2024-01-09 11:23:10,837 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:60] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:23:12,845 ERROR [JavaFX Application Thread] c.e.j.p.m.Main [SignUpController.java:60] Korisnik nije unio sve potrebne informacije za prijavu.
+2024-01-09 11:30:59,525 INFO [JavaFX Application Thread] c.e.j.p.m.Main [LoginController.java:76] Uspješna prijava.
+2024-01-09 11:34:23,080 INFO [main] c.e.j.p.m.Main [Main.java:30] Program je pokrenut.
+2024-01-09 11:34:25,826 INFO [main] c.e.j.p.m.Main [Main.java:833] Uspješno kreiran set putnika
+2024-01-09 11:34:26,437 INFO [main] c.e.j.p.m.Main [Main.java:598] Uspješno kreirano polje izleta
+2024-01-09 11:34:27,236 INFO [main] c.e.j.p.m.Main [Main.java:467] Uspješno kreirano polje izleta
+2024-01-09 11:34:27,804 INFO [main] c.e.j.p.m.Main [Main.java:183] Uspješno kreirano polje smještaja
+2024-01-09 11:37:19,868 INFO [main] c.e.j.p.m.Main [Main.java:30] Program je pokrenut.
+2024-01-09 11:37:20,712 INFO [main] c.e.j.p.m.Main [Main.java:833] Uspješno kreiran set putnika
+2024-01-09 11:37:21,007 INFO [main] c.e.j.p.m.Main [Main.java:598] Uspješno kreirano polje izleta
+2024-01-09 11:37:21,412 INFO [main] c.e.j.p.m.Main [Main.java:467] Uspješno kreirano polje izleta
+2024-01-09 11:37:21,936 INFO [main] c.e.j.p.m.Main [Main.java:183] Uspješno kreirano polje smještaja
+2024-01-09 11:38:38,583 INFO [main] c.e.j.p.m.Main [Main.java:30] Program je pokrenut.
+2024-01-09 11:38:39,846 INFO [main] c.e.j.p.m.Main [Main.java:833] Uspješno kreiran set putnika
+2024-01-09 11:38:40,127 INFO [main] c.e.j.p.m.Main [Main.java:598] Uspješno kreirano polje izleta
+2024-01-09 11:38:40,407 INFO [main] c.e.j.p.m.Main [Main.java:467] Uspješno kreirano polje izleta
+2024-01-09 11:38:40,711 INFO [main] c.e.j.p.m.Main [Main.java:183] Uspješno kreirano polje smještaja
+2024-01-09 11:39:18,755 INFO [main] c.e.j.p.m.Main [Main.java:30] Program je pokrenut.
+2024-01-09 11:39:19,880 INFO [main] c.e.j.p.m.Main [Main.java:833] Uspješno kreiran set putnika
+2024-01-09 11:39:20,295 INFO [main] c.e.j.p.m.Main [Main.java:598] Uspješno kreirano polje izleta
+2024-01-09 11:39:20,722 INFO [main] c.e.j.p.m.Main [Main.java:467] Uspješno kreirano polje izleta
+2024-01-09 11:39:21,145 INFO [main] c.e.j.p.m.Main [Main.java:183] Uspješno kreirano polje smještaja

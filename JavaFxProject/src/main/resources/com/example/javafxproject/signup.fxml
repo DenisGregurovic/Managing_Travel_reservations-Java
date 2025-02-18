@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.SignUpController">
+   <children>
+      <AnchorPane layoutY="-3.0" prefHeight="538.0" prefWidth="272.0" style="-fx-background-color: #9e9d9e;">
+         <children>
+            <ImageView fitHeight="247.0" fitWidth="306.0" layoutX="8.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="22.0">
+               <image>
+                  <Image url="@TravelLogo.jpg" />
+               </image></ImageView>
+            <Label layoutX="60.0" layoutY="269.0" text="Putovanja HR" textFill="#281564">
+               <font>
+                  <Font name="Arial Bold" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="420.0" text="Vaš prvi izbor za putovanja" textFill="#281564">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="314.0" layoutY="6.0" prefHeight="524.0" prefWidth="386.0">
+         <children>
+            <Label layoutX="39.0" layoutY="72.0" text="Username">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextArea" layoutX="145.0" layoutY="66.0" prefHeight="34.0" prefWidth="226.0" promptText="Username">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="passwordTextArea" layoutX="146.0" layoutY="138.0" prefHeight="40.0" prefWidth="225.0" promptText="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="41.0" layoutY="147.0" text="Password">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="109.0" layoutY="399.0" mnemonicParsing="false" onAction="#signUp" prefHeight="34.0" prefWidth="192.0" style="-fx-background-color: #281564;" text="Create" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="140.0" layoutY="203.0" text="Choose role:">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="adminRadioButton" layoutX="140.0" layoutY="254.0" mnemonicParsing="false" text="Admin">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="role" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="userRadioButton" layoutX="140.0" layoutY="311.0" mnemonicParsing="false" text="User" toggleGroup="$role">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="53.0" layoutY="484.0" text="Already a user?">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="195.0" layoutY="479.0" mnemonicParsing="false" onAction="#login" prefHeight="23.0" prefWidth="110.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Login!" textFill="#281663" underline="true">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="typeLabel" layoutX="153.0" layoutY="363.0" text="Password">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
